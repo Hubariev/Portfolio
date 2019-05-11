@@ -1,1 +1,48 @@
-﻿
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    padding:0;
+    margin:0;
+}
+.navtop {
+    height: 100px;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    transition: 0.2s;
+}
+
+
+header{
+    height:1115px;
+    width:100%;
+    background-color: black;
+}
+
+main{
+    margin: 0 100px 0 100px;
+}
+.wysok{
+    height:1220px;
+}
+#info {
+    background-color:blanchedalmond;
+}
+#skills {
+    background-color:darkslategray;
+}
+#projects {
+    background-color:brown;
+}
+footer{
+    height:610px;
+    width:100%;
+    background-color:black;
+}
