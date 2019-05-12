@@ -23,20 +23,30 @@
 <body>
 
 
-    <nav class="navtop">
-        <ul>
-            <li><a class="active" href="#info">Info</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav id="navtop">
+        <div class="container">
+
+            <a class="logo center" href="#info"><span id="hu">Hu</span>bar</a>
+
+            <div id="menu-items">
+                <ul>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
     </nav>
     <div id="fullpage">
 
         <section class="section page">
-            <header></header>
+            <header>
+                <p>header</p>
+            </header>
         </section>
-
 
 
         <section class="section page">
@@ -58,17 +68,13 @@
         </section>
 
 
-
-
-
-
         <section class="section page">
             <footer id="contact">
                 <p>contacts</p>
             </footer>
         </section>
 
-           
+
     </div>
 </body>
 </html>
@@ -81,4 +87,22 @@
         });
     });
 
+
+   navtop.onmouseover = function () { mouseFunction() };
+
+    function mouseFunction() {
+        if (document.getElementById("navtop").onmouseover) {
+            document.getElementById("navtop").style.boxShadow = "0 2px 12px 0 chartreuse";
+            document.getElementById("navtop").style.color = "#00FF7F";
+        }
+    }
+
+    navtop.onmouseout = function () { mouseFunction1() };
+
+    function mouseFunction1() {
+        if (document.getElementById("navtop").onmouseout) {
+            document.getElementById("navtop").style.boxShadow = null;
+        }
+
+    }
 </script>
