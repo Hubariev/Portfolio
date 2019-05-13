@@ -26,9 +26,11 @@
     <nav id="navtop">
         <div class="container">
 
-            <a class="logo center" href="#info"><span id="hu">Hu</span>bar</a>
+            <div class="logo" >
+                <a  href="#header"><span id="hu">Hu</span>bar</a>
+            </div>
 
-            <div id="menu-items">
+            <div class="menu_strony">
                 <ul>
                     <li><a href="#info">Info</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -36,14 +38,15 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            
+            <div class="logo"></div>
+
         </div>
-        
+
     </nav>
     <div id="fullpage">
 
         <section class="section page">
-            <header>
+            <header id="header">
                 <p>header</p>
             </header>
         </section>
@@ -88,7 +91,7 @@
     });
 
 
-   navtop.onmouseover = function () { mouseFunction() };
+    navtop.onmouseover = function () { mouseFunction() };
 
     function mouseFunction() {
         if (document.getElementById("navtop").onmouseover) {

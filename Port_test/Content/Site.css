@@ -6,41 +6,16 @@
 }
 
 body {
-    font-size: 28px;
+    font-size: 36px;
     padding: 0;
     margin: 0;
+    font-family:'Times New Roman', Times, serif;
 }
+
 #hu {
     color: chartreuse;
 }
-.container{
-    display:inline-block;
-    margin:0 auto;
-    width:80%;
-}
-#menu-items li :after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
 
-}
-.logo {
-    text-align: center;
-    margin-left: 50px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: #fff !important;
-    text-decoration: none;
-    text-transform: uppercase;
-    float: left;
-}
-    .logo a {
-        color: white;
-        text-align: center;
-        padding: 36px 38px;
-        text-decoration: none;
-
-    }
 #navtop {
     height: 100px;
     overflow: hidden;
@@ -50,34 +25,64 @@ body {
     top: 0;
     transition: 0.2s;
     z-index: 1;
-    display: flex;
-    flex-direction: row;
-   
 }
 
-    #navtop ul {
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height:100%;
+    justify-content:space-between;
+}
+
+.logo {
+    height: 100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #fff !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content:center;
+
+}
+
+    .logo a {
+        color: white;
+        text-align: center;
+        padding: 36px 45px;
+        text-decoration: none;
+    }
+
+.menu_strony {
+    display: flex;
+    align-items: center;
+}
+    .menu_strony ul {
+        display:flex;
         list-style-type: none;
         margin: 0;
         padding: 0;
+
+    }
+
+    .menu_strony li {
         
     }
 
-    #navtop li {
-        display:inline-flex;
-    }
-
-    #navtop ul li a {
+    .menu_strony ul li a {
         color: white;
         text-align: center;
-        padding: 36px 38px;
+        padding: 36px 70px;
         text-decoration: none;
-        justify-content:center;
     }
 
-#navtop ul li a:hover {
-    background-color: #111;
-    color: chartreuse;
-}
+        .menu_strony ul li a:hover {
+            background-color: #111;
+            color: chartreuse;
+        }
 
 .slimScrollBar {
     background: red !important;
