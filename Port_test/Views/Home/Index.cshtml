@@ -15,9 +15,14 @@
     <title>HTML5</title>
 
     <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+    @*<link rel="stylesheet" href="~/Content/bootstrap.min.css">*@
+
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
-    <script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
-    <script src="~/Scripts/jquery.fullPage.min.js"></script>
+    @*<script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/Scripts/jquery.fullPage.min.js"></script>*@
+
+
+
 
 </head>
 <body>
@@ -26,8 +31,8 @@
     <nav id="navtop">
         <div class="container">
 
-            <div class="logo" >
-                <a  href="#header"><span id="hu">Hu</span>bar</a>
+            <div class="logo">
+                <a href="#header"><span id="hu">Hu</span>bar</a>
             </div>
 
             <div class="menu_strony">
@@ -46,27 +51,35 @@
     <div id="fullpage">
 
         <section class="section page">
-            <header id="header">
-                <p>header</p>
-            </header>
+            <header id="header"></header>
         </section>
 
 
         <section class="section page">
             <div id="info" class="wysok">
-                <p>info</p>
+                <div class="title-info">
+
+                </div>
+                <div class="foto-container">
+                    <div class="foto">
+                        <img src="~/Content/Images/hubar.png" width=50% height=50% />
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section class="section page">
             <div id="skills" class="wysok">
-                <p>skills</p>
+                <div class="foto">
+
+                </div>
             </div>
         </section>
 
         <section class="section page">
             <div id="projects" class="wysok">
-                <p>prokects</p>
+                <span class="circle"></span>
             </div>
         </section>
 
