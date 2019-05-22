@@ -94,7 +94,7 @@ body {
 }
 
 header {
-    height: 1213px;
+    height: 1120px;
     width: 100%;
     background-color: aquamarine;
 }
@@ -106,12 +106,25 @@ main {
 }
 
 .wysok {
-    height: 1213px;
+    height: 1120px;
 }
 
 #info {
     background-color: aquamarine;
     border-top:2px solid black;
+}
+.grid-info{
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+.info-wrap{
+    display:grid;
+    grid-template-columns:10% 80% 10%;
+    height:100%;
+}
+.info-wrap-content {
+    width: 100%;
+    height: 100%;
 }
 .title-info {
     display: inline-flex;
@@ -119,8 +132,7 @@ main {
     align-items: center;
     height: 20%;
     /*color: white;*/
-    width: 80%;
-    margin: 0 10% 0 10%;
+    width: 100%;
     border: 1px solid aquamarine;
 }
     .title-info > h2 {
@@ -128,35 +140,61 @@ main {
         /*color: white;*/
     }
 .info-text {
-    width: 50%;
-    height: 80%;
-    margin-right: 10%;
-    float: right;
+    width: 100%;
+    height: 100%;
+    padding:10px;
 }
     .info-text > p{
         /*color:white;*/
     }
 .foto-container {
-    width: 30%;
-    height: 80%;
-    float: left;
-    margin-left:10%;
+    width: 100%;
+    height: 100%;
     padding:20px;
 }
+
+.triangle-item {
+    width: 0;
+    height: 0;
+    position:absolute;
+}
 .left-block {
+    position:relative;
     height: 100%;
-    width: 10%;
-    margin-left: 0;
-    margin-top: 0;
+    width:100%;
     background-color: aquamarine;
 }
-.right-block {
-    height: 100%;
-    width: 10%;
-    margin-right: 0;
-    margin-top: 0;
-    background-color: white;
+.left-high-triangle {
+    border-top: 200px solid black;
+    border-right: 200px solid transparent;
 }
+.left-down-triangle {
+    border-bottom: 200px solid black;
+    border-right: 200px solid transparent;
+    bottom:0;
+    left:0;
+}
+
+.right-block {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+.right-high-triangle {
+    border-top: 200px solid black;
+    border-left: 200px solid transparent;
+    top:0;
+    right:0;
+}
+
+.right-down-triangle {
+    border-bottom: 200px solid black;
+    border-left: 200px solid transparent;
+    bottom: 0;
+    right: 0;
+}
+
 .foto {
     margin-left: 25%;
     margin-top: inherit 25%;
@@ -176,7 +214,7 @@ main {
 }
 
 footer {
-    height: 610px;
+    height: 560px;
     width: 100%;
     background-color: black;
 }
