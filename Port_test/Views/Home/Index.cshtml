@@ -32,7 +32,7 @@
         <div class="container">
 
             <div class="logo">
-                <a href="#header"><span id="hu">Hu</span>bar</a>
+                <a class="active" href="#header"><span id="hu">Hu</span>bar</a>
             </div>
 
             <div class="menu_strony">
@@ -59,9 +59,10 @@
 
         <div class="info-wrap">
             <div class="left-block">
-
+                <img src="~/Content/Images/bok11.jpg" width=70% height=80% />
                 @*<div class="triangle-item left-high-triangle"></div>*@
                 <div class="triangle-item left-down-triangle"></div>
+                <div class="triangle-item left-down-triangle1"></div>
 
             </div>
             <div class="info-wrap-content">
@@ -103,8 +104,7 @@
                 @*<div class="triangle-item right-high-triangle"></div>*@
                 <div class="triangle-item right-down-triangle"></div>
                 <div class="triangle-item right-down-triangle1"></div>
-                <div class="triangle-item right-down-triangle2"></div>
-                <div class="triangle-item right-down-triangle3"></div>
+
             </div>
         </div>
 
@@ -165,4 +165,21 @@
         }
 
     }
+
+
+    $('.menu_strony ul li a').on('click', function (event) {
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $(window).on('scroll', function () {
+        $('.wysok').each(function () {
+            if ($(window).scrollTop() >= $(this).position().top) {
+                var id = $(this).attr('id');
+                $('.menu_strony ul li a').removeClass('active');
+                $('.menu_strony ul li a[href=#' + id + ']').addClass('active');
+            }
+        });
+    });
+
 </script>

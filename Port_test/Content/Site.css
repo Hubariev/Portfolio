@@ -22,7 +22,6 @@ body {
     width: 100% !important;
     overflow: hidden;
     background-color: black;
-    /*position: -webkit-sticky;*/ /* Safari */
     position: fixed;
     top: 0;
     transition: 0.2s;
@@ -59,6 +58,8 @@ body {
         text-decoration: none;
     }
 
+   
+
 .menu_strony {
     display: flex;
     align-items: center;
@@ -81,7 +82,7 @@ body {
         text-decoration: none;
     }
 
-        .menu_strony ul li a:hover {
+        .menu_strony ul li a:hover, .active {
             background-color: #111;
             color: chartreuse;
         }
@@ -178,11 +179,18 @@ main {
     border-right: 200px solid transparent;
 }*/
 .left-down-triangle {
-    border-bottom: 200px solid black;
+    border-bottom: 200px solid white;
     border-right: 200px solid transparent;
     bottom: 0;
     left: 0;
 }
+.left-down-triangle1 {
+    border-bottom: 195px solid chartreuse;
+    border-right: 195px solid transparent;
+    bottom: 0;
+    left: 0;
+}
+
 
 .right-block {
     position: relative;
@@ -198,7 +206,7 @@ main {
 }*/
 
 .right-down-triangle {
-    border-bottom: 200px solid black;
+    border-bottom: 200px solid white;
     border-left: 200px solid transparent;
     bottom: 0;
     right: 0;
@@ -206,24 +214,13 @@ main {
 }
 
 .right-down-triangle1 {
-    border-bottom: 150px solid chartreuse;
-    border-left: 150px solid transparent;
+    border-bottom: 195px solid chartreuse;
+    border-left: 195px solid transparent;
     bottom: 0;
     right: 0;
 }
-.right-down-triangle2 {
-    border-bottom: 100px solid black;
-    border-left: 100px solid transparent;
-    bottom: 0;
-    right: 0;
-}
-.right-down-triangle3 {
-    background-color:chartreuse;
-    height:40px;
-    width:40px;
-    bottom: 0;
-    right: 0;
-}
+
+
 
 .foto {
     margin-left: 25%;

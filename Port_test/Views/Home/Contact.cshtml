@@ -1,17 +1,60 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    Layout = null;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML5</title>
+
+    <link rel="stylesheet" type="text/css" href="~/Content/Site1.css" />
+    @*<link rel="stylesheet" href="~/Content/bootstrap.min.css">*@
+
+    <script src="/Scripts/jquery-3.4.1.min.js"></script>
+
+    @*<script src="~/Scripts/jquery-3.4.1.slim.min.js"></script>
+        <script src="~/Scripts/jquery.fullPage.min.js"></script>*@
+
+
+
+
+</head>
+<body>
+    <aside id="nav">
+        <nav>
+            <a href="#1" class="active">Punkt 1</a>
+            <a href="#2">Punkt 2</a>
+            <a href="#3">Punkt 3</a>
+            <a href="#4">Punkt 4</a>
+        </nav>
+    </aside>
+
+    <section id="main">
+        <div class="target" id="1">TARGET 1</div>
+        <div class="target" id="2">TARGET 2</div>
+        <div class="target" id="3">TARGET 3</div>
+        <div class="target" id="4">TARGET 4</div>
+    </section>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    $('#nav nav a').on('click', function (event) {
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $(window).on('scroll', function () {
+        $('.target').each(function () {
+            if ($(window).scrollTop() >= $(this).position().top) {
+                var id = $(this).attr('id');
+                $('#nav nav a').removeClass('active');
+                $('#nav nav a[href=#' + id + ']').addClass('active');
+            }
+        });
+    });
+</script>
