@@ -58,7 +58,7 @@ body {
         text-decoration: none;
     }
 
-   
+
 
 .menu_strony {
     display: flex;
@@ -137,7 +137,7 @@ main {
     height: 20%;
     /*color: white;*/
     width: 100%;
-    border: 1px solid aquamarine;
+    /*border: 1px solid aquamarine;*/
 }
 
     .title-info > h2 {
@@ -167,20 +167,28 @@ main {
     position: absolute;
 }
 
-.left-block {
+.left-block, .right-block {
     position: relative;
     height: 100%;
     width: 100%;
+}
+
+.info-dekor {
     background-color: aquamarine;
     opacity: 0.2;
     background: aquamarine;
-    border-right:8px solid white;
+}
+
+.skills-dekor {
+    background-color: darkslategray;
+    opacity: 0.2;
+    background: darkslategray;
 }
 /*.left-high-triangle {
     border-top: 200px solid black;
     border-right: 200px solid transparent;
 }*/
-/*.left-down-triangle {
+.left-down-triangle {
     border-bottom: 250px solid white;
     border-right: 250px solid transparent;
     bottom: 0;
@@ -191,18 +199,11 @@ main {
     border-right: 245px solid transparent;
     bottom: 0;
     left: 0;
-}*/
-
-
-.right-block {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: aquamarine;
-    opacity:0.2;
-    background:aquamarine;
-    border-left: 8px solid white;
 }
+
+/*border-left: 8px solid white; ToDo: dodac granicy!*/
+
+
 /*.right-high-triangle {
     border-top: 200px solid black;
     border-left: 200px solid transparent;
@@ -210,12 +211,11 @@ main {
     right:0;
 }*/
 
-/*.right-down-triangle {
+.right-down-triangle {
     border-bottom: 250px solid white;
     border-left: 250px solid transparent;
     bottom: 0;
     right: 0;
-    background: linear-gradient(to top left, purple, crimson, orangered, gold);
 }
 
 .right-down-triangle1 {
@@ -223,7 +223,7 @@ main {
     border-left: 245px solid transparent;
     bottom: 0;
     right: 0;
-}*/
+}
 
 
 
