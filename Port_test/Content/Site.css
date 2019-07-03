@@ -119,6 +119,37 @@ main {
     grid-template-columns: 50% 50%;
 }
 
+.grid-skills {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: 70%;
+    margin: 0 10%;
+    grid-row-gap: 5%;
+}
+.frontend-columns{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    height:100%;
+    grid-column-gap:5%;
+}
+.backend-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    grid-column-gap: 15%;
+    padding: 0 15%;
+}
+.skills-foto {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: darkslategray;
+}
+/*--------------------------------------*/
+
+
 .info-wrap {
     display: grid;
     grid-template-columns: 10% 80% 10%;
@@ -130,7 +161,7 @@ main {
     height: 100%;
 }
 
-.title-info {
+.title-info, .title-skills {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +174,12 @@ main {
     .title-info > h2 {
         text-align: center;
         /*color: white;*/
+    }
+
+
+    .title-skills > h2 {
+        text-align: center;
+        color: white;
     }
 
 .info-text {
@@ -184,61 +221,69 @@ main {
     opacity: 0.2;
     background: darkslategray;
 }
-/*.left-high-triangle {
-    border-top: 200px solid black;
-    border-right: 200px solid transparent;
-}*/
-.left-down-triangle {
-    border-bottom: 250px solid white;
-    border-right: 250px solid transparent;
-    bottom: 0;
+
+.left-down-triangle, .left-down-triangle1, .left-high-triangle, .left-high-triangle1 {
     left: 0;
 }
-.left-down-triangle1 {
+
+.left-down-triangle, .left-down-triangle1, .right-down-triangle, .right-down-triangle1 {
+    bottom: 0;
+}
+
+.right-down-triangle, .right-down-triangle1, .right-high-triangle, .right-high-triangle1 {
+    right: 0;
+}
+
+.left-high-triangle, .left-high-triangle1, .right-high-triangle, .right-high-triangle1 {
+    top: 0;
+}
+
+.info-dekor-triangle {
     border-bottom: 245px solid aquamarine;
-    border-right: 245px solid transparent;
-    bottom: 0;
-    left: 0;
 }
 
-/*border-left: 8px solid white; ToDo: dodac granicy!*/
+.skills-dekor-triangle {
+    border-bottom: 245px solid darkslategray;
+}
 
+/*trójkąty*/
+.left-down-triangle {
+    border-bottom: 250px solid chartreuse;
+    border-right: 250px solid transparent;
+}
+
+.left-down-triangle1 {
+    border-right: 245px solid transparent;
+}
+
+.left-high-triangle {
+    border-top: 250px solid chartreuse;
+    border-right: 250px solid transparent;
+}
+
+.left-high-triangle1 {
+    border-top: 245px solid darkslategray;
+    border-right: 245px solid transparent;
+}
 
 .right-high-triangle {
     border-top: 250px solid chartreuse;
     border-left: 250px solid transparent;
-    top: 0;
-    right: 0;
 }
+
 .right-high-triangle1 {
     border-top: 245px solid darkslategray;
     border-left: 245px solid transparent;
-    top: 0;
-    right: 0;
 }
-/*ToDo отделить каждый треугольник типо внизу*/
-/*
-    .triangle-info-bla bla{
-        border-bottom:bla bla
-    }
-*/
-
 
 .right-down-triangle {
     border-bottom: 250px solid chartreuse;
     border-left: 250px solid transparent;
-    bottom: 0;
-    right: 0;
 }
 
 .right-down-triangle1 {
-    border-bottom: 245px solid aquamarine;
     border-left: 245px solid transparent;
-    bottom: 0;
-    right: 0;
 }
-
-
 
 .foto {
     margin-left: 25%;
