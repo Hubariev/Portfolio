@@ -353,7 +353,7 @@ footer {
     width: 100%;
     top: 0;
     left: 0;
-
+    border-radius: 25px;
 }
 
     .block-project:hover {
@@ -372,16 +372,17 @@ footer {
         opacity:1;
     }*/
 
-    .block-project-opis {
-        height: 100%;
-        width: 100%;
-        padding: 10px;
-        color: #b8abab;
-        background-color: black;
-        text-align: center;
-        font-size: 25px;
-        position:relative;
-    }
+.block-project-opis {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: #b8abab;
+    background-color: black;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    border-radius: 0 0 25px 25px;
+}
 
 .block-project-opis > h4 {
     color: white;
@@ -391,6 +392,7 @@ footer {
 .photo-back {
     opacity: 0.8;
     background-color: black;
+    border-radius: 25px 25px 0 0;
 }
 .bigger-icon, .photo-back{
     position:absolute;
