@@ -1,42 +1,70 @@
-﻿* {
-    margin: 0;
-    padding: 0;
+﻿/* картинка на странице */
+.minimized {
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid #FFF;
 }
 
-#main {
-    width: 75%;
-    float: right;
-}
-
-    #main div.target {
-        background: #ccc;
-        height: 400px;
+    .minimized:hover {
+        border: 1px solid yellow;
     }
 
-        #main div.target:nth-child(even) {
-            background: #eee;
-        }
-
-#nav {
-    width: 25%;
-    position: relative;
+/* увеличенная картинка */
+#magnify {
+    display: none;
+    /* position: absolute; upd: 24.10.2016 */
+    position: fixed;
+    max-width: 1000px;
+    height: auto;
+    z-index: 9999;
 }
 
-    #nav nav {
-        position: fixed;
-        width: 25%;
+    #magnify img {
+        width: 100%;
     }
 
-    #nav a {
-        border-bottom: 1px solid #666;
-        color: #333;
+/* затемняющий фон */
+#overlay {
+    display: none;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #AFAFAF;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+    #close-popup i {
+        width: 30px;
+        height: 30px;
+        background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+        background-size: 16px 16px;
         display: block;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
     }
 
-        #nav a:hover, #nav a.active {
-            background: #666;
-            color: #fff;
-        }
+/*@keyframes rota {
+    25% {
+        transform: rotate(360deg);
+    }
+}
+
+#close-popup:hover {
+    animation: rota 4s infinite normal;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}*/
