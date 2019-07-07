@@ -1,12 +1,14 @@
 ﻿
 $(function () {
+   
+
     $('.minimized').click(function (event) {
 
          //attr - bierze wartość atrybutu (link do zdjęcia)
         var i_path = $(this).attr('src');
 
-        var left_ = $('#magnify').outerWidth();
-        var top_ = $('#magnify').outerHeight();
+        var a = $('#magnify').outerWidth();
+        var b = $('#magnify').outerHeight();
 
         //append - wkleja w koniec 'body' kod
         $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
@@ -31,9 +33,10 @@ $(function () {
         event.preventDefault();
 
         $('#overlay, #magnify').fadeOut('fast', function () {
-            //$('#close-popup, #magnify, #overlay').remove();
+            $('#close-popup, #magnify, #overlay').remove();
         });
+       
     });
-    alert(left_);
-    alert(top_);
+
+   
 });

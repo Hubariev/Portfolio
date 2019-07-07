@@ -315,7 +315,8 @@ main {
 }
 
 #projects {
-    background-color: brown;
+    background-color: #a154a1;
+    
 }
 
 .empty-block {
@@ -361,6 +362,7 @@ footer {
         top: -4px;
         left: -4px;
         box-shadow: 20px 20px 15px 5px #2e2e2e;
+        border:2px solid chartreuse;
     }
 
 .block-project-photo {
@@ -390,10 +392,14 @@ footer {
 }
 
 .photo-back {
-    opacity: 0.6;
+    opacity: 0.8;
     background-color: black;
     border-radius: 25px 25px 0 0;
 }
+.special-photo {
+    padding: 3% 0 3% 0;
+}
+
 .bigger-icon, .photo-back{
     position:absolute;
     height:50%;
