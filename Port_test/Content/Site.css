@@ -355,14 +355,25 @@ footer {
     top: 0;
     left: 0;
     border-radius: 25px;
+    transition-duration: 1s;
+    border: 5px solid black;
 }
 
-    .block-project:hover {
+    /*.block-project:hover {
         height: 100%;
         top: -4px;
         left: -4px;
         box-shadow: 20px 20px 15px 5px #2e2e2e;
-        border:2px solid chartreuse;
+        border: 2px solid chartreuse;
+        transition-duration: 1s;
+    }*/
+
+.block-project:hover {
+        height: 100%;
+        top: -20px;
+        box-shadow: 0 20px 15px 5px #2e2e2e;
+        border: 2px solid chartreuse;
+        transition-duration: 1s;
     }
 
 .block-project-photo {
@@ -385,6 +396,13 @@ footer {
     position: relative;
     border-radius: 0 0 25px 25px;
 }
+.github-icon{
+    height: 50px;
+    width:50px;
+    background-color:white;
+    border-radius: 25px;
+    bottom:0;
+}
 
 .block-project-opis > h4 {
     color: white;
@@ -392,13 +410,11 @@ footer {
 }
 
 .photo-back {
-    opacity: 0.8;
+    opacity: 0.7;
     background-color: black;
     border-radius: 25px 25px 0 0;
 }
-.special-photo {
-    padding: 3% 0 3% 0;
-}
+
 
 .bigger-icon, .photo-back{
     position:absolute;
@@ -422,7 +438,6 @@ footer {
 
 /* увеличенная картинка */
 #magnify {
-    display: none;
     /* position: absolute; upd: 24.10.2016 */
     position: fixed;
     max-width: 1800px;
@@ -434,12 +449,32 @@ footer {
         width: 100%;
         border-radius:16px;
     }
+        #magnify img::selection {
+            background: transparent;
+        }
+
+        #magnify img::-moz-selection {
+            background: transparent;
+        }
 
 /* затемняющий фон */
-#overlay {
-    display: none;
-    background: #000;
+#wrap-overlay {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9990;
+}
+#overlay {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position:relative;
     top: 0;
     left: 0;
     height: 100%;
@@ -448,26 +483,3 @@ footer {
     z-index: 9990;
 }
 
-/* кнопка закрытия */
-#close-popup {
-    width: 50px;
-    background: chartreuse;
-    border: 1px solid black;
-    border-radius: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-}
-
-    #close-popup i {
-        width: 50px;
-        height: 50px;
-        background: url(Images/iconclose.png) no-repeat center center;
-        background-size: 50px 50px;
-        display: block;
-    }

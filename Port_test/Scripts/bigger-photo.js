@@ -6,7 +6,7 @@ $(function () {
         var i_path = $(this).attr('src');
 
         //append - wkleja w koniec 'body' kod
-        $('body').append('<div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div>');
+        $('body').append('<div id="wrap-overlay"><div id="overlay"></div><div id="magnify"><img src="' + i_path + '"><div id="close-popup"><i></i></div></div></div>');
         $('#magnify').css({
             left: ($(document).width() - $('#magnify').outerWidth()) / 2,
             // top: ($(document).height() - $('#magnify').outerHeight())/2 upd: 24.10.2016
@@ -24,9 +24,6 @@ $(function () {
             $('#close-popup, #magnify, #overlay').remove();
         });
 
-        $('#magnify').css({
-            left: 0,
-            top: 0
-        });
+        
     });
 });
