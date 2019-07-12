@@ -175,8 +175,8 @@ F:\GitHub\Portfolio\Port_test\bin\Microsoft.AI.DependencyCollector.xml
 F:\GitHub\Portfolio\Port_test\bin\Microsoft.AI.ServerTelemetryChannel.xml
 F:\GitHub\Portfolio\Port_test\bin\Microsoft.AI.WindowsServer.xml
 F:\GitHub\Portfolio\Port_test\bin\Microsoft.AI.Web.xml
-F:\GitHub\Portfolio\Port_test\obj\Debug\Port_test.csprojResolveAssemblyReference.cache
 F:\GitHub\Portfolio\Port_test\obj\Debug\Port_test.csproj.CoreCompileInputs.cache
 F:\GitHub\Portfolio\Port_test\obj\Debug\Port_test.csproj.CopyComplete
 F:\GitHub\Portfolio\Port_test\obj\Debug\Port_test.dll
 F:\GitHub\Portfolio\Port_test\obj\Debug\Port_test.pdb
+F:\GitHub\Portfolio\Port_test\obj\Debug\Port_test.csprojAssemblyReference.cache

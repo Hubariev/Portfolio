@@ -181,7 +181,7 @@ main {
     }
 .skill-info li, .skill-info p{
     font-size:30px;
-    color: #b8abab
+    color: #b8abab;
 }
 
 .skill-high-item{
@@ -471,14 +471,6 @@ main {
 }
 
 
-
-footer {
-    height: 560px;
-    width: 100%;
-    background-color: black;
-}
-
-
 #fullpage {
     z-index: -1;
 }
@@ -623,4 +615,37 @@ footer {
     width: 100%;
     opacity: 0.5;
     z-index: 9990;
+}
+
+
+footer {
+    height: 560px;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    color: white;
+}
+
+.contact-title, .wrap-contact {
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    .wrap-contact span {
+        color: #b8abab
+    }
+    .contact-photo{
+        height: 100px;
+        width:100px;
+        background-color:black;
+    }
+    .wrap-contact li{
+        list-style:square;
+        color:chartreuse;
+    }
+
+.wrap-contact li::before {
+    color: chartreuse;
 }
